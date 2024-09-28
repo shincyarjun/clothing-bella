@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"rel="stylesheet" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- nav -->
+<header class="header" id="header">
+
+<div class="navigation">
+  <div class="nav-center container d-flex">
+  <a href="/" class="logo"><h1>Bella & Boom</h1></a>
+
+    <ul class="nav-list d-flex">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="product.html" class="nav-link">Shop</a>
+      </li>
+      <li class="nav-item">
+      <a href="offer.html" class="nav-link">offers</a>
+      </li>
+      <li class="nav-item">
+        <a href="aboutus.html" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+      <!-- <li class="icons d-flex">
+      <a href="login.html" class="icon">
+        <i class="bx bx-user"></i>
+      </a> -->
+      
+      
+    </ul>
+
+    
+
+    <div class="hamburger">
+      <i class="bx bx-menu-alt-left"></i>
+    </div>
+  </div>
+</div>
+
+<!-- form -->
+<div class="contactus">
+    <div class="title">
+        <h2>Contact us</h2>
+    </div>
+    <div class="box">
+        <!-- form -->
+        <div class="contact form">
+            <h4>Send a Message</h4>
+            <form action="https://api.web3forms.com/submit" id="contactForm" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="access_key" value="a491092f-4dc7-4e96-8a8c-c2cd3132fcf1">
+                <div class="formBox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>First Name</span>
+                            <input type="text" placeholder="Enter your name" id="name" name="name">
+                            <h3 id="nameError" class="error"></h3>
+                        </div>
+                        <div class="inputBox">
+                            <span>Code</span>
+                            <input type="text" placeholder="Enter dress code" id="code" name="code">
+                            <h3 id="codeError" class="error"></h3>
+                        </div>
+                    </div>
+
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>Email Address</span>
+                            <input type="text" placeholder="Enter your email" id="email" name="email">
+                            <h3 id="emailError" class="error"></h3>
+                        </div>
+                        <div class="inputBox">
+                            <span>Mobile</span>
+                            <input type="text" placeholder="Enter your mobile number" id="mobile" name="mobile">
+                            <h3 id="mobileError" class="error"></h3>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>Message</span>
+                            <textarea id="message" name="message"></textarea>
+                            <h3 id="messageError" class="error"></h3>
+                        </div>
+                        <div class="inputBox">
+                            <span>Address</span>
+                            <textarea id="address" name="address"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <!-- info Box -->
+        <div class="contact info">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <p>Cannaught Palace, New Delhi<br>INDIA</p>
+                </div>
+                <div>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <a href="mailto:shincyshinu@gmail.com">shincyshinu@gmail.com</a>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <a href="tel:8555426478">8555426478</a>
+                </div>
+                <!-- social media -->
+                <ul class="sci">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </ul>
+            </div>
+
+        </div>
+        <!-- map -->
+        <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.07522782041!2d75.67081530000002!3d11.689081000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6819d9a173dad%3A0x7432c43b2982d453!2sKrishnalayam%20house!5e0!3m2!1sen!2sin!4v1724519821308!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="row">
+    <div class="col d-flex">
+      <h4>INFORMATION</h4>
+      <a href="">About us</a>
+      <a href="">Contact Us</a>
+      <a href="">Terms & Conditions</a>
+      <a href="">Shipping Guide</a>
+    </div>
+    <div class="col d-flex">
+      <h4>USEFUL LINKS</h4>
+      <a href="">Online Store</a>
+      <a href="">Customer Services</a>
+      <a href="">Promotion</a>
+      <a href="">Top Brands</a>
+    </div>
+    <div class="col d-flex">
+      <a href="https://www.facebook.com/login/"><span><i class='bx bxl-facebook-square'></i></span></a>
+      <a href="https://www.instagram.com/accounts/login/?hl=en"><span><i class='bx bxl-instagram-alt'></i></span></a>
+      <a href="https://x.com/i/flow/login"><span><i class='bx bxl-twitter'></i></span></a>
+      <a href="https://in.pinterest.com/ideas/"><span><i class='bx bxl-pinterest'></i></span></a>
+    </div>
+  </div>
+</footer>
+
+   <script src="script/index.js"></script> 
